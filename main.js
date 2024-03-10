@@ -22,11 +22,13 @@ const tempoObjetivo04 = new Date("2025-01-01T00:00:00");
 
 const tempos = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 
-
-for (let i=0; i<contadores.length;i++){
-    contadores[i].textContent = calculaTempo(tempo[i]);
+function atualizaCronometro(){
+    for (let i=0; i<contadores.length;i++){
+        contadores[i].textContent = calculaTempo(tempos[i]);
+    }   
 }
 
+atualizaCronometro();
 
 function calculaTempo(tempoObjetivo){
     let tempoAtual = new Date();
