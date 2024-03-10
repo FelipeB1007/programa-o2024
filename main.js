@@ -21,7 +21,7 @@ const tempoObjetivo03 = new Date("2024-12-30T00:00:00");
 const tempoObjetivo04 = new Date("2025-01-01T00:00:00");
 
 const tempos = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
-//lembrete: o codigo  new date eu mudei para ficar apresentavelmente, o local da mudança foi 2024, q antes era 2023
+
 
 for (let i=0; i<contadores.length;i++){
     contadores[i].textContent = calculaTempo(tempo[i]);
