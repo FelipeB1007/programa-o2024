@@ -16,8 +16,17 @@ for (let i = 0; i < botoes.length; i++) {
 
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-10-05T00:00:00");
+const tempoObjetiv02 = new Date("2024-12-05T00:00:00");
+const tempoObjetivo3 = new Date("2024-12-30T00:00:00");
+const tempoObjetivo4 = new Date("2025-01-01T00:00:00");
+
+const tempos = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 //lembrete: o codigo  new date eu mudei para ficar apresentavelmente, o local da mudança foi 2024, q antes era 2023
-contadores[0].textContent = calculaTempo(tempoObjetivo1);
+
+for (let i=0; i<contadores.length;i++){
+    contadores[i].textContent = calculaTempo(tempo[i]);
+}
+
 
 function calculaTempo(tempoObjetivo){
     let tempoAtual = new Date();
